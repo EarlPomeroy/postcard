@@ -10,6 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var messageLabel: UILabel!
+    
+    @IBOutlet weak var enterNameField: UITextField!
+    
+    @IBOutlet weak var enterMessageField: UITextField!
+    
+    @IBOutlet weak var messageButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +30,13 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func messageButtonPressed(sender: UIButton) {
+        messageLabel.hidden = false
+        messageLabel.text = enterMessageField.text
+        messageLabel.textColor = UIColor.redColor()
+        enterMessageField.text = nil
+        enterMessageField.resignFirstResponder()
+        messageButton.setTitle("Message Sent", forState: UIControlState.Normal)
+    }
 }
 
