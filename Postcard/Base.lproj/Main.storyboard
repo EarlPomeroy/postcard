@@ -13,6 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="0i0-Ii-c9Z"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uIn-PB-W9d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SagradaFamilia.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="oKO-u6-lyp">
@@ -56,7 +57,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGd-S7-olH">
@@ -103,6 +104,15 @@
                                     <action selector="messageButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GZf-cW-zDF"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fz7-y6-PPC">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="27" y="119" width="151" height="29"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -112,6 +122,7 @@
                                 <exclude reference="NVu-rh-Sjg"/>
                                 <exclude reference="lh8-3B-igD"/>
                                 <exclude reference="flz-y8-k7H"/>
+                                <exclude reference="fz7-y6-PPC"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -121,6 +132,7 @@
                                 <include reference="NVu-rh-Sjg"/>
                                 <include reference="lh8-3B-igD"/>
                                 <include reference="flz-y8-k7H"/>
+                                <include reference="fz7-y6-PPC"/>
                             </mask>
                         </variation>
                     </view>
@@ -130,6 +142,7 @@
                         <outlet property="enterNameField" destination="NVu-rh-Sjg" id="Xc4-EP-gCc"/>
                         <outlet property="messageButton" destination="flz-y8-k7H" id="FrR-nA-Ajh"/>
                         <outlet property="messageLabel" destination="CGd-S7-olH" id="puM-KU-WRO"/>
+                        <outlet property="nameLabel" destination="fz7-y6-PPC" id="xs3-0k-PeU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
